@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Fazbear Collector</title>
+  <style>
+    :root { --bg: #0b0b0f; --card: #17171f; --text: #e6e6ea; --muted: #8a8a9a; --accent: #ffb347; --rust: #b84442; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+    h1 { font-size: 2rem; margin-bottom: 8px; color: #fff; }
+    .subtitle { color: var(--muted); margin-bottom: 40px; font-size: 0.95rem; }
+    h2 { font-size: 1.25rem; color: #fff; margin: 32px 0 12px; }
+    p, li { color: var(--text); margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #2a2a3e; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Effective Date: 2026-04-24</p>
+
+    <p>Fazbear Collector ("we," "our," or "the app") is a collectibles management app developed by Sevenatenine. Your privacy is important to us. This policy explains what data we collect, how we use it, and your rights.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>Account Information:</strong> When you sign in with Apple, we receive a unique user identifier and, optionally, your name and email address (if you choose to share them). Apple's "Hide My Email" feature is fully supported.</p>
+    <p><strong>Collection Data:</strong> Item identifiers (UPCs, SKU numbers, manufacturer references), quantities, conditions, custom tags, acquired-on dates, and any photos you choose to attach. In v1.0, this data is stored locally on your device using Apple's SwiftData framework. Cloud sync across devices is planned for a future release; if and when you opt in, this data will sync to our backend (Supabase).</p>
+    <p><strong>User-Uploaded Photos:</strong> You may attach your own photos of items in your collection. These are stored locally and, with cloud sync enabled, transmitted over TLS to our backend. We do not host or distribute manufacturer-supplied product imagery.</p>
+    <p><strong>Usage Analytics:</strong> We may collect anonymous, aggregated usage statistics (e.g., feature usage frequency, crash reports) to improve app quality. This data cannot be used to identify you personally.</p>
+    <p><strong>Purchase Information:</strong> Subscription and one-time purchases are processed entirely by Apple through the App Store. We do not collect or store your payment information. RevenueCat, our subscription management provider, receives anonymized purchase receipts to manage your entitlement status.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To provide and maintain the app's core functionality (collection tracking, barcode scanning, variant tracking, price lookups)</li>
+      <li>To sync your collection data across your devices, where you have opted in to cloud sync</li>
+      <li>To manage your subscription status and Pro entitlements</li>
+      <li>To improve app performance and fix bugs</li>
+      <li>To fetch real-time pricing and catalog metadata from our pricing aggregator (fnaf-prices-api)</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>We use the following third-party services:</p>
+    <ul>
+      <li><strong>Apple Sign In:</strong> Authentication provider. Subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+      <li><strong>Supabase:</strong> Cloud database and authentication backend, used only when cloud sync is enabled (planned for a post-v1.0 release). Data is stored securely with encryption at rest.</li>
+      <li><strong>RevenueCat:</strong> Subscription and entitlement management. Processes anonymized purchase data. Subject to <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
+      <li><strong>fnaf-prices-api:</strong> Our own pricing aggregator backend. Receives anonymous SKU lookup requests. No personal data is sent or stored.</li>
+      <li><strong>eBay Browse API:</strong> Used by our pricing aggregator to fetch sold-listing comparables. The app never communicates with eBay directly. No personal data is shared with eBay.</li>
+    </ul>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>Your collection data is stored locally on your device by default. If you opt in to cloud sync (planned post-v1.0), data is stored on Supabase servers (hosted on AWS, US region). All data in transit is encrypted using TLS. Data at rest is encrypted using AES-256.</p>
+
+    <h2>5. Camera Usage</h2>
+    <p>The app uses your device camera solely for identifying physical items via barcode scanning, sticker text recognition, and image-similarity matching. All recognition runs on-device using Apple's VisionKit and Vision frameworks. Captured frames are processed locally and are never uploaded to our servers or any third party. The only exception is photos you explicitly attach to a collection item, which follow the storage rules described in Section 4.</p>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <p>Your data is retained as long as your account is active. You can delete your account and all associated data at any time from the app's Settings screen. Upon deletion, all cloud-synced data is permanently removed within 30 days. Local-only users can delete the app to remove all data immediately.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>Fazbear Collector is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will promptly delete it.</p>
+
+    <h2>8. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your data</li>
+      <li>Export your collection data from the app</li>
+    </ul>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
+    <p><a href="mailto:holler@sevenatenine.co">holler@sevenatenine.co</a></p>
+
+    <div class="footer">
+      <p>&copy; 2026 Sevenatenine. All rights reserved.</p>
+      <p>Fazbear Collector is an independent collectibles management app. It is not affiliated with, endorsed by, or sponsored by Scott Cawthon, Steel Wool Studios, ScottGames LLC, Warner Bros. Pictures, Funko Inc., Sanshee LLC, Youtooz LLC, McFarlane Toys, or Jazwares LLC. All product names, logos, brands, and characters referenced in the app are the property of their respective trademark and copyright holders.</p>
+    </div>
+  </div>
+</body>
+</html>
