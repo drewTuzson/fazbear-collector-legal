@@ -23,6 +23,6 @@ Effective dates are encoded in each page's subtitle. Update the date when making
 - Card surface: `#17171f`
 - Body text: `#e6e6ea`
 
-Fazbear Collector is published by Sevenatenine. Contact: holler@sevenatenine.co.
+Fazbear Collector is published by TrueNorthAI LLC (the same studio entity that publishes ManaForge). Contact: holler@sevenatenine.co.
 
 The app is independent and not affiliated with Scott Cawthon, Steel Wool Studios, ScottGames LLC, Warner Bros. Pictures, Funko Inc., Sanshee LLC, Youtooz LLC, McFarlane Toys, or Jazwares LLC. All product names referenced are property of their respective trademark holders; the app uses nominative fair use to identify SKUs collectors are tracking.
